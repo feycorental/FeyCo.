@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fey Co. | Dress Rentals</title>
+  <title>Puff Dress Collection | Fey Co.</title>
   <style>
     * {
       box-sizing: border-box;
@@ -18,20 +18,21 @@
       padding: 20px;
     }
 
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
     /* Top Navigation */
     .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: 0 auto 20px auto;
+      margin-bottom: 20px;
     }
 
     .back-link {
       text-decoration: none;
-      color: #333;
-      font-size: 0.9rem;
-      font-weight: 500;
+      color: #333333;
+      font-size: 0.85rem;
+      font-weight: 600;
     }
 
     .logo-container {
@@ -39,9 +40,10 @@
       margin-bottom: 20px;
     }
 
-    .logo {
-      height: 60px;
-      width: auto;
+    .logo-text {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 2px;
     }
 
     nav {
@@ -66,70 +68,64 @@
       color: #cc5544;
     }
 
-    /* Hero Header */
+    /* Header */
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       letter-spacing: 2px;
       margin-bottom: 5px;
+      text-transform: uppercase;
     }
 
     header p {
       color: #666666;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
-    /* Grid Layout */
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-    }
-
-    /* Card Styling */
-    .card {
-      border: 1px solid #e0e0e0;
+    /* Product Grid / Card */
+    .product-card {
+      border: 1px solid #eeeeee;
       border-radius: 16px;
-      padding: 20px;
+      padding: 24px;
+      max-width: 500px;
+      margin: 0 auto;
       text-align: center;
       background: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
-    .card img {
+    .product-card img {
       width: 100%;
       height: 380px;
-      object-fit: contain; /* Prevents image cropping */
-      background-color: #fafafa;
+      object-fit: contain; /* Shows full dress without cropping */
       border-radius: 12px;
       margin-bottom: 15px;
+      background-color: #fafafa;
     }
 
-    .card h2 {
-      font-size: 1.1rem;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-      text-transform: uppercase;
+    .product-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
     }
 
-    .card p {
+    .product-price {
+      color: #cc5544;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .product-details {
       font-size: 0.85rem;
-      color: #666666;
+      color: #555555;
+      line-height: 1.5;
       margin-bottom: 20px;
     }
 
-    /* Button Styling */
     .btn {
       display: inline-block;
       width: 100%;
@@ -154,60 +150,42 @@
 
   <div class="container">
     
+    <div class="top-bar">
+      <a href="index.html" class="back-link">&larr; Back to All Collections</a>
+    </div>
+
     <!-- Logo -->
     <div class="logo-container">
-      <img src="https://lh3.googleusercontent.com/d/1" alt="Fey Co. Logo" class="logo">
+      <div class="logo-text">FC</div>
     </div>
 
     <!-- Navigation Menu -->
     <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#">Community</a>
-      <a href="#">How to Rent?</a>
-      <a href="#">Policies</a>
-      <a href="#">When Worn</a>
+      <a href="index.html">HOME</a>
+      <a href="#">COMMUNITY</a>
+      <a href="#">WHEN WORN</a>
     </nav>
 
     <!-- Header Title -->
     <header>
-      <h1>FEY CO. RENTALS</h1>
-      <p>Find your perfect dress for any occasion</p>
+      <h1>PUFF DRESS COLLECTION</h1>
+      <p>Rent your dream dress</p>
     </header>
 
-    <!-- Collection Cards Grid -->
-    <div class="grid">
+    <!-- Single Item Card -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format&fit=crop" alt="Belle Puff Dress">
       
-      <!-- Corset Dress Card -->
-      <div class="card">
-        <img src="corset.jpg" alt="Corset Dress Collection">
-        <div>
-          <h2>Corset Dress Collection</h2>
-          <p>Explore lace, velvet, and structured corset styles</p>
-        </div>
-        <a href="corsetdresscollections.html" class="btn">View Collection</a>
+      <div class="product-title">Belle Puff Dress</div>
+      <div class="product-price">&#8369;350 / 3 Days</div>
+      
+      <div class="product-details">
+        Fabric/Design: Premium Silk<br>
+        Regular fit<br>
+        Size: S - M
       </div>
 
-      <!-- Puff Dress Card -->
-      <div class="card">
-        <!-- Make sure 'puff.jpg' matches the exact name of your uploaded image file on GitHub -->
-        <img src="puff.jpg" alt="Puff Dress Collection">
-        <div>
-          <h2>Puff Dress Collection</h2>
-          <p>Explore sweet and flowy puff sleeve dress styles</p>
-        </div>
-        <a href="PuffDressCollections.html" class="btn">View Collection</a>
-      </div>
-
-      <!-- Strap Dress Card -->
-      <div class="card">
-        <img src="strap.jpg" alt="Strap Dress Collection">
-        <div>
-          <h2>Strap Dress Collection</h2>
-          <p>Explore elegant and chic strap dress styles</p>
-        </div>
-        <a href="strapdresscollections.html" class="btn">View Collection</a>
-      </div>
-
+      <a href="https://www.facebook.com/1DNiAmbiKs" class="btn" target="_blank">Reserve / Rent Now</a>
     </div>
 
   </div>

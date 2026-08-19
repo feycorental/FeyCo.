@@ -14,9 +14,32 @@
     
     header { text-align: center; margin-bottom: 30px; }
     header img { width: 80px; height: auto; }
-    header h1 { margin: 10px 0 5px 0; letter-spacing: 2px; }
+    header h1 { margin: 15px 0 5px 0; letter-spacing: 2px; }
     header p { color: #666; margin: 0; }
     
+    /* Navigation Bar Styling */
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+    .nav-bar a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+    .nav-bar a:hover {
+      color: #c0392b;
+    }
+
     .back-btn { display: inline-block; margin-bottom: 20px; color: #222; text-decoration: none; font-weight: bold; }
     
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
@@ -37,6 +60,15 @@
 
   <header>
     <img src="FeyCoLogo.PNG" alt="Fey Co. Logo">
+    
+    <!-- Top Navigation Menu -->
+    <nav class="nav-bar">
+      <a href="index.html">HOME</a>
+      <a href="corsetdresscollections.html">DRESSES</a>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" target="_blank">HOW TO RENT?</a>
+      <a href="https://www.tiktok.com/@YOUR_TIKTOK_USERNAME" target="_blank">WHEN WORN</a>
+    </nav>
+
     <h1>CORSET DRESS COLLECTION</h1>
     <p>Rent your dream dress</p>
   </header>
@@ -60,11 +92,11 @@
 
     <!-- Valentina Corset Dress -->
     <div class="card">
-      <a href="Valentina.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Corset Dress">
+      <a href="Valentina.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Corset Dress - Front View">
         <img src="Valentina.jpg" alt="Valentina Corset Dress">
       </a>
-      <a href="Valentina2.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Corset Dress" class="hidden-gallery-link"></a>
-      <a href="Valentina3.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Corset Dress" class="hidden-gallery-link"></a>
+      <a href="Valentina2.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Corset Dress - Close Up" class="hidden-gallery-link"></a>
+      <a href="Valentina3.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Corset Dress - Flat Lay" class="hidden-gallery-link"></a>
 
       <h2>Valentina Corset Dress</h2>
       <div class="price">₱350 / 3 Days</div>
@@ -76,11 +108,11 @@
 
     <!-- Mathilda Corset Dress -->
     <div class="card">
-      <a href="Mathilda.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Corset Dress">
+      <a href="Mathilda.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Corset Dress - Front View">
         <img src="Mathilda.jpg" alt="Mathilda Corset Dress">
       </a>
-      <a href="Mathilda2.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Corset Dress" class="hidden-gallery-link"></a>
-      <a href="Mathilda3.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Corset Dress" class="hidden-gallery-link"></a>
+      <a href="Mathilda2.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Corset Dress - Close Up" class="hidden-gallery-link"></a>
+      <a href="Mathilda3.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Corset Dress - Flat Lay" class="hidden-gallery-link"></a>
 
       <h2>Mathilda Corset Dress</h2>
       <div class="price">₱350 / 3 Days</div>

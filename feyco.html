@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fancybox CSS for Image Zoom & Gallery Popup -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    /* Clickable Image Style */
+    .card a.zoom-link {
+      display: block;
+      cursor: zoom-in;
+    }
+    .card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .price {
+      color: #b85b56;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .details {
+      color: #666;
+      font-size: 14px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="grid">
+
+    <!-- Product 1 -->
+    <div class="card">
+      <!-- Main Clickable Image -->
+      <a href="Elsa.jpg" data-fancybox="elsa-gallery" data-caption="Elsa Mini Dress" class="zoom-link">
+        <img src="Elsa.jpg" alt="Elsa Mini Dress">
+      </a>
+
+      <!-- Hidden Extra Images for Fullscreen Gallery Swiping -->
+      <a href="Elsa2.jpg" data-fancybox="elsa-gallery" data-caption="Elsa Mini Dress - Details" style="display:none;"></a>
+      
+      <h2>Elsa Mini Dress</h2>
+      <div class="price">₱250 / 3 Days</div>
+      <p class="details">Size: S - M | Color: Blue</p>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+      <a href="Penelope.jpg" data-fancybox="penelope-gallery" data-caption="Penelope Mini Dress" class="zoom-link">
+        <img src="Penelope.jpg" alt="Penelope Mini Dress">
+      </a>
+
+      <!-- Extra Images for Penelope Gallery Popup -->
+      <a href="Penelope2.jpg" data-fancybox="penelope-gallery" data-caption="Penelope Mini Dress" style="display:none;"></a>
+      <a href="Penelope3.jpg" data-fancybox="penelope-gallery" data-caption="Penelope Mini Dress - Details" style="display:none;"></a>
+
+      <h2>Penelope Mini Dress</h2>
+      <div class="price">₱300 / 3 Days</div>
+      <p class="details">Size: S - M | Color: Beige</p>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+    </div>
+
+<!-- Product 3 -->
+    <div class="card">
+      <a href="Belle.jpg" data-fancybox="Belle-gallery" data-caption="Belle Mini Dress" class="zoom-link">
+        <img src="Belle.jpg" alt="Belle Mini Dress">
+      </a>
+
+      <!-- Extra Images for Belle Gallery Popup -->
+      <a href="Belle2.jpg" data-fancybox="Belle-gallery" data-caption="Belle Mini Dress" style="display:none;"></a>
+
+      <h2>Belle Mini Dress</h2>
+      <div class="price">₱300 / 3 Days</div>
+      <p class="details">Size: XXS - S | Color: Floral Yellow</p>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Fancybox JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind("[data-fancybox]", {
+    // Enables pinch-to-zoom and click-to-zoom features
+    Toolbar: {
+      display: {
+        left: ["infobar"],
+        middle: [],
+        right: ["zoom", "close"],
+      },
+    },
+  });
+</script>
+
+</body>
+</html>

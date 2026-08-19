@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puff Dress Collection - FeyCo.</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  
+  <style>
+    * { box-sizing: border-box; font-family: sans-serif; }
+    body { margin: 0; background-color: #fff; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    header { text-align: center; margin-bottom: 30px; }
+    header img { width: 80px; height: auto; }
+    header h1 { margin: 10px 0 5px 0; letter-spacing: 2px; }
+    header p { color: #666; margin: 0; }
+    
+    .back-btn { display: inline-block; margin-bottom: 20px; color: #222; text-decoration: none; font-weight: bold; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 15px; text-align: center; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .card img { width: 100%; border-radius: 8px; object-fit: cover; }
+    .card h2 { font-size: 18px; margin: 12px 0 6px 0; }
+    .price { color: #c0392b; font-weight: bold; margin-bottom: 6px; }
+    .details { color: #666; font-size: 14px; margin: 4px 0; }
+    .btn { display: inline-block; background-color: #222; color: #fff; padding: 10px 20px; border-radius: 20px; text-decoration: none; margin-top: 10px; font-size: 14px; }
+  </style>
+</head>
+<body>
 
+<div class="container">
+  <a href="index.html" class="back-btn">← Back to All Collections</a>
+
+  <header>
+    <img src="FeyCoLogo.PNG" alt="Fey Co. Logo">
+    <h1>PUFF DRESS COLLECTION</h1>
+    <p>Rent your dream dress</p>
+  </header>
+
+  <div class="grid">
+
+    <!-- Penelope Mini Dress -->
+    <div class="card">
+      <a href="Penelope.jpg" data-fancybox="Penelope-gallery" data-caption="Penelope Mini Dress">
+        <img src="Penelope.jpg" alt="Penelope Mini Dress">
+      </a>
+      <a href="Penelope2.jpg" data-fancybox="Penelope-gallery" data-caption="Penelope Mini Dress" style="display:none;"></a>
+      <a href="Penelope3.jpg" data-fancybox="Penelope-gallery" data-caption="Penelope Mini Dress" style="display:none;"></a>
+      <h2>Penelope Mini Dress</h2>
+      <div class="price">₱350 / 3 Days</div>
+      <p class="details">Flower Lace Puff Dress</p>
+      <p class="details">Size: S - M | Color: Beige</p>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+    </div>
+
+    <!-- Belle Mini Dress -->
+    <div class="card">
+      <a href="Belle.jpg" data-fancybox="Belle-gallery" data-caption="Belle Mini Dress">
+        <img src="Belle.jpg" alt="Belle Mini Dress">
+      </a>
+      <a href="Belle2.JPG" data-fancybox="Belle-gallery" data-caption="Belle Mini Dress" style="display:none;"></a>
+      <h2>Belle Mini Dress</h2>
+      <div class="price">₱350 / 3 Days</div>
+      <p class="details">Floral Puff Dress</p>
+      <p class="details">Size: XXS - S | Color: Yellow</p>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>Fancybox.bind("[data-fancybox]", {});</script>
+
+</body>
+</html>

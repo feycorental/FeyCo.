@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tube Dress Collection - FeyCo.</title>
+  
+  <!-- Fancybox CSS for Image Gallery -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  
+  <style>
+    * { box-sizing: border-box; font-family: sans-serif; }
+    body { margin: 0; background-color: #fff; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    
+    header { text-align: center; margin-bottom: 30px; }
+    header img { width: 80px; height: auto; }
+    header h1 { margin: 10px 0 5px 0; letter-spacing: 2px; }
+    header p { color: #666; margin: 0; }
+    
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    
+    .card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .card h2 { font-size: 18px; margin: 12px 0 6px 0; }
+    .price { color: #c0392b; font-weight: bold; margin-bottom: 6px; }
+    .details { color: #666; font-size: 14px; margin: 4px 0; }
+    
+    .btn {
+      display: inline-block;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  
+  <a href="index.html" class="back-btn">← Back to All Collections</a>
+
+  <header>
+    <img src="FeyCoLogo.PNG" alt="Fey Co. Logo">
+    <h1>TUBE DRESS COLLECTION</h1>
+    <p>Rent your dream dress</p>
+  </header>
+
+  <div class="grid">
+    
+    <!-- Scarlette Mini Dress -->
+    <div class="card">
+      <a href="Scarlette.jpg" data-fancybox="Scarlette-gallery" data-caption="Scarlette Mini Dress" class="zoom-link">
+        <img src="Scarlette.jpg" alt="Scarlette Mini Dress">
+      </a>
+      <a href="Scarlette2.jpg" data-fancybox="Scarlette-gallery" data-caption="Scarlette Mini Dress" style="display:none;"></a>
+      
+      <h2>Scarlette Mini Dress</h2>
+      <div class="price">₱300 / 3 Days</div>
+      <p class="details">Lace Silk Corset Dress</p>
+      <p class="details">Size: S - Semi M | Color: Beige</p>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+    </div>
+
+    <!-- Valentina Mini Dress -->
+    <div class="card">
+      <a href="Valentina.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Mini Dress" class="zoom-link">
+        <img src="Valentina.jpg" alt="Valentina Mini Dress">
+      </a>
+      <a href="Valentina2.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Mini Dress" style="display:none;"></a>
+      
+      <h2>Valentina Mini Dress</h2>
+      <div class="price">₱350 / 3 Days</div>
+      <p class="details">Velvet Tube Dress</p>
+      <p class="details">Size: XS - S | Color: Burgundy</p>
+      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Fancybox JS for Image Popups -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind("[data-fancybox]", {});
+</script>
+
+</body>
+</html>

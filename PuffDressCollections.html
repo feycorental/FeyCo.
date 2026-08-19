@@ -36,19 +36,32 @@
       text-transform: uppercase;
       transition: color 0.2s ease;
     }
-    .nav-bar a:hover {
+    .nav-bar a:hover, .nav-bar a.active {
       color: #c0392b;
-    }
-
-    .nav-bar a.community-link {
-      color: #c0392b;
-      font-weight: bold;
     }
 
     .back-btn { display: inline-block; margin-bottom: 20px; color: #222; text-decoration: none; font-weight: bold; }
     
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-    .card { border: 1px solid #eee; border-radius: 16px; padding: 15px; text-align: center; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    /* Centered Flex Layout for Cards */
+    .grid { 
+      display: flex; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+    }
+
+    /* Fixed Card Sizing */
+    .card { 
+      border: 1px solid #eee; 
+      border-radius: 16px; 
+      padding: 15px; 
+      text-align: center; 
+      background: #fff; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+      width: 100%;
+      max-width: 320px;
+    }
+
     .card img { width: 100%; height: 350px; border-radius: 12px; object-fit: cover; display: block; }
     .card h2 { font-size: 18px; margin: 12px 0 6px 0; color: #222; }
     .price { color: #c0392b; font-weight: bold; margin-bottom: 8px; }
@@ -66,7 +79,7 @@
   <header>
     <img src="FeyCoLogo.PNG" alt="Fey Co. Logo">
     
-    <!-- Navigation Menu -->
+    <!-- Navigation Menu with Red HOME -->
     <nav class="nav-bar">
       <a href="index.html" class="active">HOME</a>
       <a href="https://m.me/j/YOUR_MESSENGER_COMMUNITY_LINK/" target="_blank">COMMUNITY</a>
@@ -79,7 +92,7 @@
 
   <div class="grid">
     
-    <!-- Belle Puff Dress -->
+    <!-- Belle Puff Dress Card -->
     <div class="card">
       <a href="Belle.jpg" data-fancybox="Belle-gallery" data-caption="Belle Puff Dress">
         <img src="Belle.jpg" alt="Belle Puff Dress">

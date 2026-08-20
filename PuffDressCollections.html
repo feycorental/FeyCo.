@@ -53,7 +53,51 @@
     .card h2 { font-size: 18px; margin: 12px 0 6px 0; color: #222; }
     .price { color: #c0392b; font-weight: bold; margin-bottom: 8px; }
     .details { color: #555; font-size: 14px; margin: 4px 0; }
-    .btn { display: inline-block; background-color: #222; color: #fff; padding: 10px 20px; border-radius: 20px; text-decoration: none; margin-top: 12px; font-size: 14px; font-weight: bold; }
+    
+    /* Button Group Styling */
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .btn-reserve, .btn-rent {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
+    /* Primary Dark Button for Messenger */
+    .btn-rent {
+      background-color: #222222;
+      color: #ffffff;
+      border: 1px solid #222222;
+    }
+
+    .btn-rent:hover {
+      background-color: #444444;
+    }
+
+    /* Secondary Outline Button for Calendly */
+    .btn-reserve {
+      background-color: transparent;
+      color: #222222;
+      border: 1px solid #222222;
+    }
+
+    .btn-reserve:hover {
+      background-color: #222222;
+      color: #ffffff;
+    }
     
     .hidden-gallery-link { display: none !important; }
   </style>
@@ -70,7 +114,7 @@
     <nav class="nav-bar">
       <a href="index.html" class="active">HOME</a>
       <a href="https://m.me/j/YOUR_MESSENGER_COMMUNITY_LINK/" target="_blank">COMMUNITY</a>
-      <a href="https://www.tiktok.com/@YOUR_TIKTOK_USERNAME" target="_blank">WHEN WORN</a>
+      <a href="https://www.tiktok.com/@feycorental" target="_blank">WHEN WORN</a>
     </nav>
 
     <h1>PUFF DRESS COLLECTION</h1>
@@ -93,7 +137,11 @@
       <p class="details">Size: S-M | Fit for Fuller Bust</p>
       <p class="details">Rent Days: 3</p>
       <p class="details">Color: Beige</p>
-      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+      
+      <div class="button-group">
+        <a href="https://calendly.com/feyco-business/fitting-schedule" target="_blank" class="btn-reserve">RESERVE FITTING</a>
+        <a href="https://m.me/FeyCoRental" target="_blank" class="btn-rent">RENT NOW</a>
+      </div>
     </div>
 
     <!-- Belle Puff Dress -->
@@ -109,7 +157,11 @@
       <p class="details">Size: XXS-S | Fit for Flat-Fuller Bust</p>
       <p class="details">Rent Days: 3</p>
       <p class="details">Color: Yellow</p>
-      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+      
+      <div class="button-group">
+        <a href="https://calendly.com/feyco-business/fitting-schedule" target="_blank" class="btn-reserve">RESERVE FITTING</a>
+        <a href="https://m.me/FeyCoRental" target="_blank" class="btn-rent">RENT NOW</a>
+      </div>
     </div>
 
   </div>

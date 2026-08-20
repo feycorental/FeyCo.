@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corset Dress Collection - FeyCo.</title>
   
+  <!-- Playfair Display Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
     header { text-align: center; margin-bottom: 30px; }
     header img { width: 80px; height: auto; }
     
-    /* Elegant Title Styling */
+    /* Collection Title Styling */
     header h1 { 
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 2rem;
@@ -58,7 +59,18 @@
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
     .card { border: 1px solid #eee; border-radius: 16px; padding: 15px; text-align: center; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
     .card img { width: 100%; height: 350px; border-radius: 12px; object-fit: contain; background-color: #f9f9f9; display: block; }
-    .card h2 { font-size: 18px; margin: 12px 0 6px 0; color: #222; }
+    
+    /* Elegant Item Name Typography */
+    .card h2 { 
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.25rem; 
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 14px 0 6px 0; 
+      color: #222222; 
+    }
+
     .price { color: #c0392b; font-weight: bold; margin-bottom: 8px; }
     .details { color: #555; font-size: 14px; margin: 4px 0; }
     
@@ -103,8 +115,6 @@
       background-color: #222222;
       color: #ffffff;
     }
-    
-    .hidden-gallery-link { display: none !important; }
   </style>
 </head>
 <body>
@@ -116,7 +126,7 @@
     <img src="FeyCoLogo.PNG" alt="Fey Co. Logo">
     
     <nav class="nav-bar">
-      <a href="index.html" class="active">HOME</a>
+      <a href="index.html">HOME</a>
       <a href="https://www.facebook.com/FeyCoRental" target="_blank">FACEBOOK PAGE</a>
       <a href="https://www.tiktok.com/@feycorental" target="_blank">TIKTOK</a>
       <a href="howtorent.html">HOW TO RENT?</a>
@@ -128,16 +138,14 @@
 
   <div class="grid">
     <div class="card">
-      <a href="Mathilda.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Dress Front">
-        <img src="Mathilda.jpg" alt="Mathilda Dress">
+      <a href="Mathilda.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda When Worn">
+        <img src="Mathilda2.jpg" alt="Mathilda When Worn">
       </a>
-      <a href="Mathilda2.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Dress Side" class="hidden-gallery-link"></a>
-      <a href="Mathilda3.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Dress Back" class="hidden-gallery-link"></a>
 
-      <h2>Mathilda</h2>
+      <h2>MATHILDA</h2>
       <div class="price">₱380</div>
-      <p class="details">Fabric | Design: Corset Back Tie</p>
-      <p class="details">Size: XS-M | Adjustable Fit</p>
+      <p class="details">Fabric | Design: Fur Silk</p>
+      <p class="details">Size: XXS-S | Fit for Fulle Bust</p>
       <p class="details">Rent Days: 3</p>
       
       <div class="button-group">
@@ -147,15 +155,14 @@
     </div>
 
     <div class="card">
-      <a href="Odette.jpg" data-fancybox="Odette-gallery" data-caption="Odette Dress Front">
-        <img src="Odette.jpg" alt="Odette Dress">
+      <a href="Odette.jpg" data-fancybox="Odette-gallery" data-caption="Odette When Worn">
+        <img src="Odette2.jpg" alt="Odette When Worn">
       </a>
-      <a href="Odette2.jpg" data-fancybox="Odette-gallery" data-caption="Odette Dress Back" class="hidden-gallery-link"></a>
 
-      <h2>Odette</h2>
+      <h2>ODETTE</h2>
       <div class="price">₱380</div>
-      <p class="details">Fabric | Design: Corset Satin</p>
-      <p class="details">Size: S-M | Regular Fit</p>
+      <p class="details">Fabric | Design: Lace Satin</p>
+      <p class="details">Size: S-Semi M | Fit for Fuller Bust</p>
       <p class="details">Rent Days: 3</p>
       
       <div class="button-group">
@@ -165,16 +172,14 @@
     </div>
 
     <div class="card">
-      <a href="Valentina.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Dress Front">
-        <img src="Valentina.jpg" alt="Valentina Dress">
+      <a href="Valentina.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina When Worn">
+        <img src="Valentina2.jpg" alt="Valentina When Worn">
       </a>
-      <a href="Valentina2.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Dress Detail" class="hidden-gallery-link"></a>
-      <a href="Valentina3.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Dress Back" class="hidden-gallery-link"></a>
 
-      <h2>Valentina</h2>
+      <h2>VALENTINA</h2>
       <div class="price">₱380</div>
-      <p class="details">Fabric | Design: Lace Corset</p>
-      <p class="details">Size: S-L | Adjustable Tie Back</p>
+      <p class="details">Fabric | Design: Silk Corset</p>
+      <p class="details">Size: XXS-S | Fit for Flat-Fuller Bust</p>
       <p class="details">Rent Days: 3</p>
       
       <div class="button-group">

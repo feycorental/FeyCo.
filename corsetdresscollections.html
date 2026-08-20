@@ -36,43 +36,63 @@
       text-transform: uppercase;
       transition: color 0.2s ease;
     }
-    .nav-bar a:hover, .nav-bar a.active {
+    .nav-bar a:hover {
       color: #c0392b;
     }
 
     .back-btn { display: inline-block; margin-bottom: 20px; color: #222; text-decoration: none; font-weight: bold; }
     
-    /* Grid layout supporting 1 to many items neatly */
-    .grid { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); 
-      justify-content: center; 
-      gap: 25px; 
-      margin-top: 30px;
-    }
-
-    .card { 
-      border: 1px solid #eee; 
-      border-radius: 16px; 
-      padding: 15px; 
-      text-align: center; 
-      background: #fff; 
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
-    }
-
-    .card img { 
-      width: 100%; 
-      height: 420px; 
-      border-radius: 12px; 
-      object-fit: cover; 
-      object-position: top center; 
-      display: block; 
-    }
-
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #eee; border-radius: 16px; padding: 15px; text-align: center; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .card img { width: 100%; height: 350px; border-radius: 12px; object-fit: cover; display: block; }
     .card h2 { font-size: 18px; margin: 12px 0 6px 0; color: #222; }
     .price { color: #c0392b; font-weight: bold; margin-bottom: 8px; }
     .details { color: #555; font-size: 14px; margin: 4px 0; }
-    .btn { display: inline-block; background-color: #222; color: #fff; padding: 10px 20px; border-radius: 20px; text-decoration: none; margin-top: 12px; font-size: 14px; font-weight: bold; }
+    
+    /* Button Group Styling */
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .btn-reserve, .btn-rent {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
+    /* Primary Dark Button for Messenger */
+    .btn-rent {
+      background-color: #222222;
+      color: #ffffff;
+      border: 1px solid #222222;
+    }
+
+    .btn-rent:hover {
+      background-color: #444444;
+    }
+
+    /* Secondary Outline Button for Calendly */
+    .btn-reserve {
+      background-color: transparent;
+      color: #222222;
+      border: 1px solid #222222;
+    }
+
+    .btn-reserve:hover {
+      background-color: #222222;
+      color: #ffffff;
+    }
     
     .hidden-gallery-link { display: none !important; }
   </style>
@@ -85,67 +105,77 @@
   <header>
     <img src="FeyCoLogo.PNG" alt="Fey Co. Logo">
     
-    <!-- Simplified Navigation Menu -->
+    <!-- Navigation Menu -->
     <nav class="nav-bar">
       <a href="index.html" class="active">HOME</a>
-      <a href="https://m.me/j/YOUR_MESSENGER_COMMUNITY_LINK/" target="_blank">COMMUNITY</a>
-      <a href="https://www.tiktok.com/@YOUR_TIKTOK_USERNAME" target="_blank">WHEN WORN</a>
+      <a href="https://www.facebook.com/FeyCoRental" target="_blank">FACEBOOK PAGE</a>
+      <a href="https://www.tiktok.com/@feycorental" target="_blank">TIKTOK</a>
+      <a href="howtorent.html">HOW TO RENT?</a>
     </nav>
 
     <h1>CORSET DRESS COLLECTION</h1>
-    <p>Rent your dream corset dress</p>
+    <p>Find your ideal corset dress fit</p>
   </header>
 
   <div class="grid">
     
+    <!-- Mathilda Corset Dress -->
+    <div class="card">
+      <a href="Mathilda.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Dress Front">
+        <img src="Mathilda.jpg" alt="Mathilda Dress">
+      </a>
+      <a href="Mathilda2.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Dress Side" class="hidden-gallery-link"></a>
+      <a href="Mathilda3.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Dress Back" class="hidden-gallery-link"></a>
+
+      <h2>Mathilda</h2>
+      <div class="price">₱380</div>
+      <p class="details">Fabric | Design: Corset Back Tie</p>
+      <p class="details">Size: XS-M | Adjustable Fit</p>
+      <p class="details">Rent Days: 3</p>
+      
+      <div class="button-group">
+        <a href="https://calendly.com/feyco-business/fitting-schedule" target="_blank" class="btn-reserve">RESERVE FITTING</a>
+        <a href="https://m.me/FeyCoRental" target="_blank" class="btn-rent">RENT NOW</a>
+      </div>
+    </div>
+
     <!-- Odette Corset Dress -->
     <div class="card">
-      <a href="Odette.jpg" data-fancybox="Odette-gallery" data-caption="Odette When Worn">
-        <img src="Odette.jpg" alt="Odette When Worn">
+      <a href="Odette.jpg" data-fancybox="Odette-gallery" data-caption="Odette Dress Front">
+        <img src="Odette.jpg" alt="Odette Dress">
       </a>
-      <a href="Odette2.jpg" data-fancybox="Odette-gallery" data-caption="Odette Dress" class="hidden-gallery-link"></a>
-      
+      <a href="Odette2.jpg" data-fancybox="Odette-gallery" data-caption="Odette Dress Back" class="hidden-gallery-link"></a>
+
       <h2>Odette</h2>
-      <div class="price">₱350</div>
-      <p class="details">Fabric | Design: Lace Silk</p>
-      <p class="details">Size: S-M | Fit for Fuller Bust</p>
-      <p class="details">Color: Beige</p>
+      <div class="price">₱380</div>
+      <p class="details">Fabric | Design: Corset Satin</p>
+      <p class="details">Size: S-M | Regular Fit</p>
       <p class="details">Rent Days: 3</p>
-      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+      
+      <div class="button-group">
+        <a href="https://calendly.com/feyco-business/fitting-schedule" target="_blank" class="btn-reserve">RESERVE FITTING</a>
+        <a href="https://m.me/FeyCoRental" target="_blank" class="btn-rent">RENT NOW</a>
+      </div>
     </div>
 
     <!-- Valentina Corset Dress -->
     <div class="card">
-      <a href="Valentina.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina When Worn">
-        <img src="Valentina.jpg" alt="Valentina When Worn">
+      <a href="Valentina.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Dress Front">
+        <img src="Valentina.jpg" alt="Valentina Dress">
       </a>
-      <a href="Valentina2.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina When Worn" class="hidden-gallery-link"></a>
-      <a href="Valentina3.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Dress" class="hidden-gallery-link"></a>
+      <a href="Valentina2.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Dress Detail" class="hidden-gallery-link"></a>
+      <a href="Valentina3.jpg" data-fancybox="Valentina-gallery" data-caption="Valentina Dress Back" class="hidden-gallery-link"></a>
 
       <h2>Valentina</h2>
-      <div class="price">₱350</div>
-      <p class="details">Fabric | Design: Velvet Silk</p>
-      <p class="details">Size: XXS-S | Fit for Flat-Fuller Bust</p>
-      <p class="details">Color: Burgundy</p>
+      <div class="price">₱380</div>
+      <p class="details">Fabric | Design: Lace Corset</p>
+      <p class="details">Size: S-L | Adjustable Tie Back</p>
       <p class="details">Rent Days: 3</p>
-      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
-    </div>
-
-    <!-- Mathilda Corset Dress -->
-    <div class="card">
-      <a href="Mathilda.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda When Worn">
-        <img src="Mathilda.jpg" alt="Mathilda When Worn">
-      </a>
-      <a href="Mathilda2.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda When Worn" class="hidden-gallery-link"></a>
-      <a href="Mathilda3.jpg" data-fancybox="Mathilda-gallery" data-caption="Mathilda Dress" class="hidden-gallery-link"></a>
-
-      <h2>Mathilda</h2>
-      <div class="price">₱350</div>
-      <p class="details">Fabric | Design: Fur Silk</p>
-      <p class="details">Size: XXS-S | Fit for Fuller Bust</p>
-      <p class="details">Color: Burgundy</p>
-      <p class="details">Rent Days: 3</p>
-      <a href="https://www.facebook.com/share/1DNiAmbiKs/?mibextid=wwXIfr" class="btn" target="_blank">Reserve / Rent Now</a>
+      
+      <div class="button-group">
+        <a href="https://calendly.com/feyco-business/fitting-schedule" target="_blank" class="btn-reserve">RESERVE FITTING</a>
+        <a href="https://m.me/FeyCoRental" target="_blank" class="btn-rent">RENT NOW</a>
+      </div>
     </div>
 
   </div>

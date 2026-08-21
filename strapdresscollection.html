@@ -27,8 +27,7 @@
       letter-spacing: 2.5px; 
       text-transform: uppercase;
       color: #222222;
-      margin: 15px 0 5px 0; 
-    }
+      margin: 15px 0 5px 0;   }
     
     header p { color: #666; margin: 0; }
     
@@ -56,6 +55,12 @@
 
     .back-btn { display: inline-block; margin-bottom: 20px; color: #222; text-decoration: none; font-weight: bold; }
     
+    /* Global Link Style Fix for Underlines */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
     .card { border: 1px solid #eee; border-radius: 16px; padding: 15px; text-align: center; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
     .card img { width: 100%; height: 350px; border-radius: 12px; object-fit: contain; background-color: #f9f9f9; display: block; }
@@ -141,7 +146,7 @@
       <a href="Elsa.jpg" data-fancybox="Elsa-gallery" data-caption="Elsa When Worn">
         <img src="Elsa.jpg" alt="Elsa Dress">
       </a>
-       <a href="Elsa2.jpg" data-fancybox="Elsa-gallery" data-caption="Elsa Dress">
+      <a href="Elsa2.jpg" data-fancybox="Elsa-gallery" data-caption="Elsa Dress"></a>
 
       <h2>ELSA</h2>
       <div class="price">₱280</div>
